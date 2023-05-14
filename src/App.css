@@ -1,0 +1,20 @@
+.app-container{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #578fcc;
+}
+
+.map{
+    background-image: url("./assets/pokemon_map.png");
+    background-size: cover;
+    background-position: center;
+    width: 1920px;
+    height: 937px;
+}
+
+.map-node{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
