@@ -8,4 +8,5 @@ export interface IMapNode{
     position: NodePosition;
     hasPikachu?: boolean;
     hasEnemy?: boolean;
+    hasPokeball?: boolean;
 }

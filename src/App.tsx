@@ -14,6 +14,7 @@ function App() {
           <MapNode mapNode={mn} />
         ))}
       </div>
+      <div className="pokeboard img-container"></div>
     </main>
   );
 }
