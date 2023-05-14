@@ -1,16 +1,16 @@
-import { MapNode } from "../interfaces/node.interface";
+import { IMapNode } from "../interfaces/node.interface";
 
-export const defaultNodeList: MapNode[] = [
+export const defaultNodeList: IMapNode[] = [
   { name: "A", position: { left: 659, top: 140 } },
   { name: "B", position: { left: 951, top: 139 } },
   { name: "C", position: { left: 1198, top: 198 } },
   { name: "D", position: { left: 1424, top: 167 } },
   { name: "E", position: { left: 1720, top: 144 } },
-  { name: "F", position: { left: 221, top: 278 } },
+  { name: "F", position: { left: 221, top: 278 }, hasPikachu: true },
   { name: "G", position: { left: 522, top: 312 } },
   { name: "H", position: { left: 846, top: 310 } },
   { name: "I", position: { left: 978, top: 227 } },
-  { name: "J", position: { left: 1531, top: 272 } },
+  { name: "J", position: { left: 1531, top: 272 }, hasEnemy: true },
   { name: "K", position: { left: 372, top: 377 } },
   { name: "L", position: { left: 325, top: 487 } },
   { name: "M", position: { left: 472, top: 499 } },
@@ -28,6 +28,6 @@ export const defaultNodeList: MapNode[] = [
   { name: "X", position: { left: 1526, top: 645 } },
   { name: "Y", position: { left: 1691, top: 644 } },
   { name: "Z", position: { left: 1663, top: 763 } },
-  { name: "CH", position: { left: 1865, top: 880 } },
+  { name: "CH", position: { left: 1840, top: 880 } },
   { name: "BOSS", position: { left: 1361, top: 775 } },
 ];

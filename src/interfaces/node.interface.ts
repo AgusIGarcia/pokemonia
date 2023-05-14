@@ -3,7 +3,9 @@ interface NodePosition{
     left: number;
 }
 
-export interface MapNode{
+export interface IMapNode{
     name: string;
     position: NodePosition;
+    hasPikachu?: boolean;
+    hasEnemy?: boolean;
 }
