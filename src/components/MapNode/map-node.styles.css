@@ -26,3 +26,13 @@
 .map-node-with-enemy {
   background-image: url("../../assets/gengar.png");
 }
+
+.map-node-with-pokeball {
+  width: 90px;
+  height: 90px;
+  background-image: url("../../assets/map-pokeball.png");
+}
+
+.map-node-with-pikachu-and-gengar {
+  background-image: url("../../assets/pikachu-gengar.png");
+}

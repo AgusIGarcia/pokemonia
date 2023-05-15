@@ -33,7 +33,8 @@ const MapNode = ({ mapNode }: MapNodeProps) => {
 };
 
 const getBackgroundImageClass = (mapNode: IMapNode): string => {
-  if (mapNode.hasEnemy && mapNode.hasPikachu) return "";
+  if (mapNode.hasEnemy && mapNode.hasPikachu) return "map-node-with-pikachu-and-gengar";
+  if (mapNode.hasPokeball) return "map-node-with-pokeball";
   if (mapNode.hasEnemy) return "map-node-with-enemy";
   if (mapNode.hasPikachu) return "map-node-with-pikachu";
   return "";
