@@ -27,10 +27,18 @@ const PokeBoard = (props: PokeBoardProps) => {
   return (
     <div>
       <div className="pokeboard img-container" />
-      <div className="pokeboard-perception-cycle-counter">
+      <div
+        className="pokeboard-perception-cycle-counter"
+        style={{ left: props.currentPerceptionCycle < 10 ? 184 : 178 }}
+      >
         {props.currentPerceptionCycle}
       </div>
-      <div className="pokeboard-energy-counter">{props.pickachuEnergy}</div>
+      <div
+        className="pokeboard-energy-counter"
+        style={{ left: props.pickachuEnergy < 10 ? 252 : 247 }}
+      >
+        {props.pickachuEnergy}
+      </div>
       <div
         className={`pokeboard-action img-container ${getClassNameAction(
           props.selectedAction

@@ -26,9 +26,9 @@
 }
 
 .game-result-win{
-  background-image: url("./assets/pokemon_map.png");
+  background-image: url("./assets/win.png");
 }
 
-.game-result-loss{
-  background-image: url("./assets/pokemon_map.png");
+.game-result-lose{
+  background-image: url("./assets/lose.png");
 }

@@ -25,7 +25,7 @@ function App() {
         totalCycles={totalCycles}
       />
       {isWin === false && (
-        <div className="game-result img-container game-result-win" />
+        <div className="game-result img-container game-result-lose" />
       )}
       {isWin === true && (
         <div className="game-result img-container game-result-win" />
