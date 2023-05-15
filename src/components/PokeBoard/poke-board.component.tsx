@@ -38,6 +38,28 @@ const PokeBoard = (props: PokeBoardProps) => {
       />
       <div className="pokeboard-left-arrow" onClick={setPrevPerceptionCycle} />
       <div className="pokeboard-right-arrow" onClick={setNextPerceptionCycle} />
+
+      {props.specialPowers[0].canBeUsed && (
+        <div className="pokeboard-special-power pokeboard-special-power-1 img-container">
+          <p className="pokeboard-special-power-cooldown">
+            {props.specialPowers[0].cooldown}
+          </p>
+        </div>
+      )}
+      {props.specialPowers[1].canBeUsed && (
+        <div className="pokeboard-special-power pokeboard-special-power-2 img-container">
+          <p className="pokeboard-special-power-cooldown">
+            {props.specialPowers[1].cooldown}
+          </p>
+        </div>
+      )}
+      {props.specialPowers[2].canBeUsed && (
+        <div className="pokeboard-special-power pokeboard-special-power-3 img-container">
+          <p className="pokeboard-special-power-cooldown">
+            {props.specialPowers[2].cooldown}
+          </p>
+        </div>
+      )}
     </div>
   );
 };

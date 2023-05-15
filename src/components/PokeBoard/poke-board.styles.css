@@ -74,3 +74,34 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+.pokeboard-special-power {
+  background-image: url("../../assets/special-power-active.png");
+  position: absolute;
+  width: 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokeboard-special-power-cooldown {
+  font-weight: bold;
+  font-size: larger;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 12px;
+  padding-right: 5px;
+}
+
+.pokeboard-special-power-1 {
+  top: 833px;
+  left: 148px;
+}
+.pokeboard-special-power-2 {
+  top: 833px;
+  left: 180px;
+}
+.pokeboard-special-power-3 {
+  top: 833px;
+  left: 211px;
+}
