@@ -9,8 +9,12 @@ const MapNode = ({ mapNode }: MapNodeProps) => {
   const topPadding = 75;
   const leftPadding = 37;
 
-  const backgroundColor = mapNode.hasEnemy ? "#FF1E1E" : "#44FD67";
-  const textColor = mapNode.hasEnemy ? "white" : "black";
+  const backgroundColor = mapNode.hasPokeball ? "#44FD67" : "#FF1E1E";
+  const textColor = mapNode.hasPokeball ? "black" : "white";
+  const printEnergy =
+    mapNode.hasEnemy ||
+    mapNode.hasPokeball ||
+    (mapNode.hasBoss && !mapNode.hasPikachu);
 
   return (
     <div
@@ -20,7 +24,7 @@ const MapNode = ({ mapNode }: MapNodeProps) => {
         left: mapNode.position.left - leftPadding,
       }}
     >
-      {(mapNode.hasEnemy || mapNode.hasPokeball) && (
+      {printEnergy && (
         <div
           className="map-node-energy"
           style={{ backgroundColor: backgroundColor, color: textColor }}
@@ -33,10 +37,12 @@ const MapNode = ({ mapNode }: MapNodeProps) => {
 };
 
 const getBackgroundImageClass = (mapNode: IMapNode): string => {
-  if (mapNode.hasEnemy && mapNode.hasPikachu) return "map-node-with-pikachu-and-gengar";
+  if (mapNode.hasEnemy && mapNode.hasPikachu)
+    return "map-node-with-pikachu-and-gengar";
   if (mapNode.hasPokeball) return "map-node-with-pokeball";
   if (mapNode.hasEnemy) return "map-node-with-enemy";
   if (mapNode.hasPikachu) return "map-node-with-pikachu";
+  if (mapNode.hasBoss) return "map-node-with-boss";
   return "";
 };
 

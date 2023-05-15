@@ -10,4 +10,5 @@ export interface IMapNode{
     hasPikachu?: boolean;
     hasEnemy?: boolean;
     hasPokeball?: boolean;
+    hasBoss?: boolean;
 }

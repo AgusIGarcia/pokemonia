@@ -4,13 +4,14 @@ import PokeBoard from "./components/PokeBoard/poke-board.component";
 import useGameState from "./hooks/useGameState.hook";
 
 function App() {
-  const { gameState, perceptionCycle, setPerceptionCycle, totalCycles } =
+  const { gameState, perceptionCycle, setPerceptionCycle, totalCycles, isWin } =
     useGameState();
-
-  console.log(gameState);
   return (
     <main className="app-container">
-      <div className="map img-container">
+      <div
+        className="map img-container"
+        style={{ opacity: isWin !== undefined ? 0.5 : 1 }}
+      >
         {gameState.nodeMap.map((mn) => (
           <MapNode key={mn.name} mapNode={mn} />
         ))}
@@ -23,6 +24,12 @@ function App() {
         setCurrentPerceptionCycle={setPerceptionCycle}
         totalCycles={totalCycles}
       />
+      {isWin === false && (
+        <div className="game-result img-container game-result-win" />
+      )}
+      {isWin === true && (
+        <div className="game-result img-container game-result-win" />
+      )}
     </main>
   );
 }

@@ -14,3 +14,21 @@
   width: 1920px;
   height: 930px;
 }
+
+.game-result{
+  background-color: red;
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.game-result-win{
+  background-image: url("./assets/pokemon_map.png");
+}
+
+.game-result-loss{
+  background-image: url("./assets/pokemon_map.png");
+}
