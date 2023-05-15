@@ -1,0 +1,14 @@
+.map-node {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background-color: red;
+}
+
+.map-node-with-pikachu {
+  background-image: url("../../assets/pikachu.png");
+}
+
+.map-node-with-enemy {
+  background-image: url("../../assets/gengar.png");
+}

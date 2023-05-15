@@ -1,0 +1,17 @@
+.pokeboard {
+  position: absolute;
+  top: 563px;
+  left: 5px;
+  width: 370px;
+  height: 370px;
+  background-image: url("../../assets/poke-board.png");
+}
+
+.pokeboard-energy-counter {
+  position: absolute;
+  top: 726px;
+  left: 247px;
+  font-weight: bold;
+  font-size: larger;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

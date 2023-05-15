@@ -1,4 +1,5 @@
-import { IMapNode } from "../interfaces/node.interface";
+import { IMapNode } from "../../interfaces/node.interface";
+import "./map-node.styles.css";
 
 interface MapNodeProps {
   mapNode: IMapNode;

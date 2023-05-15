@@ -14,27 +14,3 @@
   width: 1920px;
   height: 930px;
 }
-
-.map-node {
-  position: absolute;
-  width: 110px;
-  height: 110px;
-  background-color: red;
-}
-
-.map-node-with-pikachu {
-  background-image: url("./assets/pikachu.png");
-}
-
-.map-node-with-enemy {
-  background-image: url("./assets/gengar.png");
-}
-
-.pokeboard {
-  position: absolute;
-  top: 563px;
-  left: 5px;
-  width: 370px;
-  height: 370px;
-  background-image: url("./assets/poke-board.png");
-}
