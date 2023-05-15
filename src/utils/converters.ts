@@ -55,7 +55,7 @@ const graphToMapNodeArray = (
       name: nodeName,
       energy: gn[1],
       hasEnemy: gn[2].toLowerCase() === "enemigo",
-      hasPokeball: gn[2] === "pokeball",
+      hasPokeball: gn[2].toLowerCase() === "pokebola",
       hasPikachu: nodeName === pikachuCurrentNode,
       position: defaultNodeList.find((defNode) => defNode.name === gn[0])
         ?.position || { left: 0, top: 0 },
