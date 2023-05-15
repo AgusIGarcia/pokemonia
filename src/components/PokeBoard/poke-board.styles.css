@@ -50,3 +50,27 @@
   top: 883px;
   left: 219px;
 }
+
+.pokeboard-action-pelear {
+  background-image: url("../../assets/action-pelear.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.pokeboard-action-no-pelear {
+  background-image: url("../../assets/action-no-pelear.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.pokeboard-action-moverse {
+  background-image: url("../../assets/action-moverse.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.pokeboard-action-recolectar-pokebola {
+  background-image: url("../../assets/action-pokeball.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}

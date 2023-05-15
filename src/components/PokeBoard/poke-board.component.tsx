@@ -23,7 +23,7 @@ const PokeBoard = (props: PokeBoardProps) => {
     props.setCurrentPerceptionCycle((currentPC) =>
       currentPC === props.totalCycles ? currentPC : currentPC + 1
     );
-    
+
   return (
     <div>
       <div className="pokeboard img-container" />
@@ -31,11 +31,28 @@ const PokeBoard = (props: PokeBoardProps) => {
         {props.currentPerceptionCycle}
       </div>
       <div className="pokeboard-energy-counter">{props.pickachuEnergy}</div>
-      <div className="pokeboard-action img-container" />
+      <div
+        className={`pokeboard-action img-container ${getClassNameAction(
+          props.selectedAction
+        )}`}
+      />
       <div className="pokeboard-left-arrow" onClick={setPrevPerceptionCycle} />
       <div className="pokeboard-right-arrow" onClick={setNextPerceptionCycle} />
     </div>
   );
+};
+
+const getClassNameAction = (action: PikachuAction) => {
+  switch (action) {
+    case PikachuAction.PELEAR:
+      return "pokeboard-action-pelear";
+    case PikachuAction.NO_PELEAR:
+      return "pokeboard-action-no-pelear";
+    case PikachuAction.MOVERSE:
+      return "pokeboard-action-moverse";
+    case PikachuAction.RECOLECTAR_POKEBOLA:
+      return "pokeboard-action-recolectar-pokebola";
+  }
 };
 
 export default PokeBoard;
