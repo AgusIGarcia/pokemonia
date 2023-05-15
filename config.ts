@@ -1,1 +1,0 @@
-export const gamePath = "./public/game.json";

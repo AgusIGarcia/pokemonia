@@ -16,6 +16,15 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.pokeboard-perception-cycle-counter {
+  position: absolute;
+  top: 605px;
+  left: 184px;
+  font-weight: bold;
+  font-size: larger;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .pokeboard-action {
   position: absolute;
   width: 63px;
@@ -24,3 +33,20 @@
   left: 226px;
 }
 
+.pokeboard-left-arrow {
+  position: absolute;
+  cursor: pointer;
+  width: 63px;
+  height: 26px;
+  top: 883px;
+  left: 97px;
+}
+
+.pokeboard-right-arrow {
+  position: absolute;
+  cursor: pointer;
+  width: 63px;
+  height: 26px;
+  top: 883px;
+  left: 219px;
+}

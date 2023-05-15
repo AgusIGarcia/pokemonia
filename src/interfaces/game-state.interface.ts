@@ -12,9 +12,9 @@ export interface ISpecialPower {
   cooldown: number;
 }
 
-export interface IGameEstate {
+export interface IGameState {
   pikachuEnergy: number;
   selectedAction: PikachuAction;
   specialPowers: ISpecialPower[];
-  map: IMapNode[];
+  nodeMap: IMapNode[];
 }
