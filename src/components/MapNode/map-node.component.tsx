@@ -11,7 +11,6 @@ const MapNode = ({ mapNode }: MapNodeProps) => {
 
   return (
     <div
-      key={mapNode.name}
       className={`map-node img-container ${getBackgroundImageClass(mapNode)}`}
       style={{
         top: mapNode.position.top - topPadding,

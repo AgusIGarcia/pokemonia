@@ -12,7 +12,7 @@ function App() {
     <main className="app-container">
       <div className="map img-container">
         {nodes.map((mn) => (
-          <MapNode mapNode={mn} />
+          <MapNode key={mn.name} mapNode={mn} />
         ))}
       </div>
       <PokeBoard />

@@ -6,6 +6,7 @@ interface NodePosition{
 export interface IMapNode{
     name: string;
     position: NodePosition;
+    energy: number;
     hasPikachu?: boolean;
     hasEnemy?: boolean;
     hasPokeball?: boolean;
